@@ -7,6 +7,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { SortArrayPipe } from './pipes/sort-array.pipe';
+import { DebounceDirective } from './directives/debounce.directive';
+import { DebounceInputComponent } from './components/debounce-input/debounce-input.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SortArrayPipe } from './pipes/sort-array.pipe';
     AboutComponent,
     ContactComponent,
     CapitalizePipe,
-    SortArrayPipe
+    SortArrayPipe,
+    DebounceDirective,
+    DebounceInputComponent
   ],
   imports: [
     BrowserModule,
