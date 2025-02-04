@@ -9,6 +9,7 @@ import { DataService } from '../../services/data-service.service';
 export class HomeComponent implements OnInit {
   name: string = '';
   string: string = "hello world";
+  array: Array<number> = [4,3,1,8,2];
 
   constructor(private dataService: DataService) {}
 
