@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngFor="let item of items">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.body }}</p>
+    </div>
+  
+    <div *ngIf="loading" class="loading">
+      Loading more items...
+    </div>
+  
+    <div *ngIf="!hasMoreItems && !loading">
+      No more items to load.
+    </div>
+  </div>
+  

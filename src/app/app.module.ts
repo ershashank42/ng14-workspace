@@ -9,6 +9,8 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { SortArrayPipe } from './pipes/sort-array.pipe';
 import { DebounceDirective } from './directives/debounce.directive';
 import { DebounceInputComponent } from './components/debounce-input/debounce-input.component';
+import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { DebounceInputComponent } from './components/debounce-input/debounce-inp
     CapitalizePipe,
     SortArrayPipe,
     DebounceDirective,
-    DebounceInputComponent
+    DebounceInputComponent,
+    InfiniteScrollComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

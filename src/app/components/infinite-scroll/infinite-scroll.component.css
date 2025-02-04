@@ -1,0 +1,25 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .item {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 10px;
+    background-color: #eef;
+  }
+  
+  .no-more {
+    text-align: center;
+    padding: 10px;
+    background-color: #fdd;
+    color: #d00;
+  }
+  
