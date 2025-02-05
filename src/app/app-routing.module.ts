@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'debounceroute', component: DebounceInputComponent },
   { path: 'infinitescroll', component: InfiniteScrollComponent },
+  { path: 'lazy', loadChildren: () => import('./modules/lazy-loaded/lazy-loaded.module').then(m => m.LazyLoadedModule) }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
