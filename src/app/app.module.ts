@@ -11,6 +11,7 @@ import { DebounceDirective } from './directives/debounce.directive';
 import { DebounceInputComponent } from './components/debounce-input/debounce-input.component';
 import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

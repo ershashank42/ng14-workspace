@@ -9,3 +9,24 @@
 <p> Array after using impure pipe: {{ array | sortArray }}</p>
 
 <p> Final transformed array: {{ array }}</p>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>First Name:</label>
+      <input type="text" formControlName="firstName" />
+      <div *ngIf="userForm.get('firstName')?.touched && userForm.get('firstName')?.invalid">
+        <small style="color:red">First Name is required</small>
+      </div>
+    </div>
+  
+    <div>
+      <label>Last Name:</label>
+      <input type="text" formControlName="lastName" />
+      <div *ngIf="userForm.get('lastName')?.touched && userForm.get('lastName')?.invalid">
+        <small style="color:red">Last Name is required</small>
+      </div>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
